@@ -40,80 +40,271 @@
         <li><a href="buynow.html"><span class="navText">Buy Now</span></a></li>
         <li><a href="contactUs.html"><span class="navText">Contact Us</span></a></li>
         </ul>
-    </nav>
+      </nav>
         <div class="container">
           <div class="slogan">
             <label>Be Eco, Inspire others to be Eco.</label>
           </div>
-          <div><img src="./Images/Eco original.webp"  class="banner" srcset="./Images/Eco4950.webp 1x, ./Images/Eco5150.webp 2x, ./Images/Eco5350.webp 3x"></div>
+          <div><img src="./Images/Eco original.webp"  class="banner" srcset="./Images/Eco4950.webp 1x, ./Images/Eco5150.webp 2x, ./Images/Eco5350.webp 3x" alt="main banner"></div>
+          <div class="buynow">
+            <div class="container"><h3 class="slogan">Purchase Now</h3></div>
+          <form class="fullform">
+            <fieldset>
+              <legend class="formflex">Manufacturers</legend>
+              <p>
+                <label>Eco-Products SL</label>
+                <input type="radio" id="epsl" name="manufacturers" value="Eco-Products SL">
+              </p>
+              <p>
+                <label>Ecoware Lanka</label>
+                <input type="radio" id="ewl" name="manufacturers" value="Ecoware Lanka">
+              </p>
+              <p>
+                <label>Trickledown</label>
+                <input type="radio" id="td" name="manufacturers" value="Trickledown">
+              </p>
+              <p>
+                <label>Back to Earth</label>
+                <input type="radio" id="bte" name="manufacturers" value="Back to Earth">
+              </p>
+            </fieldset>
+            <fieldset class="formflex">
+              <legend>Product Type</legend>
+              <p>
+                <label>Bags - 1000LKR</label>
+                <input type="radio" id="bg" name="products" value="Bags">
+              </p>
+              <p>
+                <label>Plates - 2000LKR</label>
+                <input type="radio" id="plt" name="products" value="Plates">
+              </p>
+              <p>
+                <label>Mugs - 2500LKR</label>
+                <input type="radio" id="mg" name="products" value="Mugs">
+              </p>
+              <p>
+                <label>Soap - 800LKR</label>
+                <input type="radio" id="sp" name="products" value="Soap">
+              </p>
+            </fieldset>
+            <fieldset class="formflex">
+              <legend>Size</legend>
+              <p>
+                <label>Small</label>
+                <input type="radio" id="sml" name="size" value="Small">
+              </p>
+              <p>
+                <label>Medium - 2500LKR</label>
+                <input type="radio" id="mdm" name="size" value="Medium" checked>
+              </p>
+              <p>
+                <label>Large - 5000LKR</label>
+                <input type="radio" id="lrg" name="size" value="Large">
+              </p>
+            </fieldset>
+            <fieldset class="formflex">
+              <legend>Extras</legend>
+              <p>  
+                <input type="checkbox" id="efp" name="ext1" value="Eco-Friendly Packaging">
+                <label>Eco-Friendly Packaging - 500LKR</label>   
+              </p>
+              <p>  
+                <input type="checkbox" id="efgc" name="ext2" value="Eco-Friendly Greeting Cards">
+                <label>Eco-Friendly Greeting Cards - 1000LKR</label>   
+              </p>
+              <p>  
+                <input type="checkbox" id="efd" name="ext3" value="Eco-Friendly Decorations">
+                <label>Eco-Friendly Decorations - 1500LKR</label>   
+              </p>
+            </fieldset>
+            <div class="btnbox">
+              <p>
+                <button type="reset" name="submit" id="addcurrord" class="btn">Add to Current Order</button>
+              </p>                
+              <p>
+                <button type="reset" name="submit" id="addfav" class="btn">Add to Favourites</button>
+              </p>
+            </div>
+          </form>
+          <br>
+          <div class="currentorderMain">
+            <div class="container"><h3 class="slogan">Current Order</h3></div>
+            <div>
+              <label>Manufacturer</label>
+              <input readonly class="currentbox"type="text" name="manufacCurr" id="manufacCurr">
+            </div>
+            <br>
+            <div>
+              <label>Product Type</label>
+              <input readonly class="currentbox"type="text" name="prodtypeCurr" id="prodtypeCurr">
+            </div>
+            <br>
+            <div>
+              <label>Size</label>
+              <input readonly class="currentbox"type="text" name="sizeCurr" id="sizeCurr">
+            </div>
+            <br>
+            <div>
+              <label>Extra 1</label>
+              <input readonly class="currentbox"type="text" name="extCurr" id="extCurr1">
+              <br>
+              <br>
+              <label>Extra 2</label>
+              <input readonly class="currentbox"type="text" name="extCurr" id="extCurr2">
+              <br>
+              <br>
+              <label>Extra 3</label>
+              <input readonly class="currentbox"type="text" name="extCurr" id="extCurr3">
+            </div>
+            <br>
+            <br>
+              <div>
+                <label><b>Total Cost</b></label>
+                <input readonly class="currentbox" type="text" name="totalcostcurrent" id="totalcurrent">  
+              </div>
+            <div class="btnbox">
+              <p>
+                <button onclick="addRow();" type="reset" name="submit" id="addoverall" class="btn">Add to Overall Order</button>
+              </p>                
+            </div>
+          </div>
+          <div class="favouritesMain">
+            <div class="container"><h3 class="slogan">Favourites</h3></div>
+            <div>
+              <label>Manufacturer</label>
+              <input readonly class="currentbox" type="text" name="manufacFav" id="manufacFav">
+            </div>
+            <br>
+            <div>
+              <label>Product Type</label>
+              <input readonly class="currentbox"type="text" name="prodtypeFav" id="prodtypeFav">
+            </div>
+            <br>
+            <div>
+              <label>Size</label>
+              <input readonly class="currentbox"type="text" name="sizeFav" id="sizeFav">
+            </div>
+            <br>
+            <div>
+              <label>Extra 1</label>
+              <input readonly class="currentbox"type="text" name="extFav" id="extFav1">
+              <br>
+              <br>
+              <label>Extra 2</label>
+              <input readonly class="currentbox"type="text" name="extFav" id="extFav2">
+              <br>
+              <br>
+              <label>Extra 3</label>
+              <input readonly class="currentbox"type="text" name="extFav" id="extFav3">
+            </div>
+            <br>
+            <br>  
+            <div>
+                <label><b>Total Cost</b></label>
+                <input readonly class="box" type="text" name="totalcostfav" id="totalfav">  
+              </div>
+            <div class="btnbox">
+              <p>
+                <button onclick="addfavRow(); " type="reset" name="submit" id="ordfav" class="btn">Order Favourites</button>
+              </p>
+            </div>
+          </div>
+          <div class="overallorderMain">
+            <div class="container"><h3 class="slogan">Overall Order</h3></div>
+              <table class="prod_table" id="overallOrderTable">
+                  <tr>
+                    <th>Manufacturer</th>
+                    <th>Product Type</th>
+                    <th>Size</th>
+                    <th>Extra</th>
+                    <th>Price</th>
+                  </tr>
+                <!-- <tbody>
+
+                </tbody> -->
+              </table>
+              <br>
+            <div>
+              <label><b>Total Cost</b></label>
+              <input readonly class="box" type="text" name="totalcost" id="total">  
+            </div>
+            <br>
+            <div class="btnbox">
+              <p>
+                <button type="reset" name="submit" id="plcord" class="btn">Place Order</button>
+              </p>  
+              <p>
+                <button type="reset" name="submit" id="loybtn" class="btn">Check Loyalty</button>
+              </p>  
+            </div>
+          </div>
+          </div>
           <!--FOOTER-->
           <footer class="fcontainer">
             <!--Enquiries-->
             <div class="fsub_container">
-            <div class="contacts">
-              <img src="./Images/email.webp" class="footerdec">
-              <div class="contacts_sub">
-                <p class="ftext">E-Mail: </p>
-                <a href="mailto:cb008612@students.apiit.lk" target="blank"><p><span class="ftext">cb008612@students.apiit.lk</span></p></a>
+              <div class="contacts">
+                <img src="./Images/email.webp" class="footerdec" alt="email">
+                    <div class="contacts_sub">
+                      <p class="ftext">E-Mail: </p>
+                      <a href="mailto:cb008612@students.apiit.lk" target="blank"><p><span class="ftext">cb008612@students.apiit.lk</span></p></a>
+                    </div>
+              </div>
+              <div class="contacts">
+                <img src="./Images/phone.webp" class="footerdec" alt="phone">
+                    <div class="contacts_sub">
+                      <p class="ftext">Phone: </p>
+                      <a href="tel:+94776565568"><p><span class="ftext">+94 77 6565 568</span></p></a>
+                    </div>
+              </div>
+              <div class="contacts">
+                <img src="./Images/address.webp" class="footerdec" alt="address">
+                  <div class="contacts_sub">
+                    <p class="ftext">Address: </p>
+                    <a href="https://www.google.lk/maps/place/Maxence+Apartments/@6.905472,79.8500067,19z/data=!4m5!3m4!1s0x3ae2595da18e6515:0xe7c496a3995bcfba!8m2!3d6.9059141!4d79.8505647" target="blank"><p><span class="ftext">No. 410/15 Marine Drive, Colombo.</span></p></a>
+                  </div>
               </div>
             </div>
-            <div class="contacts">
-              <img src="./Images/phone.webp" class="footerdec">
-              <div class="contacts_sub">
-                <p class="ftext">Phone: </p>
-                <a href="tel:+94776565568"><p><span class="ftext">+94 77 6565 568</span></p></a>
+            <!--Sign up form-->
+            <div class="fsub_container">
+              <div class="contacts">
+                <img src="./Images/add-reminder.webp" class="footerdec" alt="reminder">
+                    <div class="contacts_sub">
+                      <p class="ftext">Sign up for our newsletter: </p>
+                      <div class="contacts">
+                        <input type="email" name="email">
+                        <input type="image" src="./Images/submit.webp" class="submit_button" alt="Signupbutton">
+                      </div>
+                    </div>
               </div>
-            </div>
-            <div class="contacts">
-              <img src="./Images/address.webp" class="footerdec">
-              <div class="contacts_sub">
-                <p class="ftext">Address: </p>
-                <a href="https://www.google.lk/maps/place/Maxence+Apartments/@6.905472,79.8500067,19z/data=!4m5!3m4!1s0x3ae2595da18e6515:0xe7c496a3995bcfba!8m2!3d6.9059141!4d79.8505647" target="blank"><p><span class="ftext">No. 410/15 Marine Drive, Colombo.</span></p></a>
-              </div>
-            </div>
-            </div>
-          <!--Sign up form-->
-          <div class="fsub_container">
-            
-            <div class="contacts">
-                <img src="./Images/add-reminder.webp" class="footerdec">
-              <div class="contacts_sub">
-                <p class="ftext">Sign up for our newsletter: </p>
-                <div class="contacts">
-                  <input type="email" name="email">
-                  <input type="image" src="./Images/submit.webp" class="submit_button">
-                </div>
-              </div>
-            </div>
           </div>
-            <!--This tag follows on div tag (Social Media)-->
-          <div class="fsub_container">
-            <div class="follow_us contacts mob_contacts">
-              <p class="followtext">Follow us on:</p>
+        <!--This tag follows on div tag (Social Media)-->
+            <div class="fsub_container">
+              <div class="follow_us contacts mob_contacts">
+                <p class="followtext">Follow us on:</p>
                 <div class="icon_seg">
-                  <a href="https://www.facebook.com" target="blank"><img src="./Images/fb.webp" class="fsocial"></a>
-                  <a href="https://www.instagram.com" target="blank"><img src="./Images/insta.webp" class="fsocial"></a>
-                  <a href="https://twitter.com/twitt_login?lang=en" target="blank"><img src="./Images/twitter.webp" class="fsocial"></a>
-                  <a href="https://www.pinterest.com" target="blank"><img src="./Images/pinterest.webp" class="fsocial"></a>
+                  <a href="https://www.facebook.com" target="blank"><img src="./Images/fb.webp" class="fsocial" alt="fb"></a>
+                  <a href="https://www.instagram.com" target="blank"><img src="./Images/insta.webp" class="fsocial" alt="instagram"></a>
+                  <a href="https://twitter.com/twitt_login?lang=en" target="blank"><img src="./Images/twitter.webp" class="fsocial" alt="twitter"></a>
+                  <a href="https://www.pinterest.com" target="blank"><img src="./Images/pinterest.webp" class="fsocial" alt="pinterest"></a>
                 </div>
               </div>
-           </div> 
-             <!-- 
-               <-URL Links Images and Icons->
-                1. Pexels --(https://www.pexels.com/)
-                2. Pixabay --(https://pixabay.com/)
-                3. Flickr --(https://www.flickr.com/)
-                4. Getty Images --(https://www.gettyimages.com/resources/embed)
-                5. icons8 --(https://icons8.com)
-                6. Free Images --(https://www.freeimages.com/)
-                7. Unplash --(https://unsplash.com/)
-              -->
-              <!-- Name: Mohamed Thahir Aashiq Ahmed -->
-              <!-- Phone: 077 8989 98 2 -->           
-        </footer>
-        <div class="patent">
-          <label>&copy; 2021 EcoHub, Inc.</label>
-          <br>
-          <label>All Rights Reserved.</label>
-        </div>
-      </body>
+            </div> 
+                     <!-- 
+                       <-URL Links Images and Icons->
+                        1. Pexels -(https://www.pexels.com/)
+                        2. Pixabay -(https://pixabay.com/)
+                        3. Flickr -(https://www.flickr.com/)
+                        4. Getty Images -(https://www.gettyimages.com/resources/embed)
+                        5. icons8 -(https://icons8.com)
+                        6. Free Images -(https://www.freeimages.com/)
+                        7. Unplash -(https://unsplash.com/)
+                      -->
+                      <!-- Name: Mohamed Thahir Aashiq Ahmed -->
+                      <!-- Phone: 077 8989 98 2 -->
+            </footer>
+              <div class="patent">
+                <p>&copy; 2021 EcoHub, Inc. &nbsp; All Rights Reserved.</p>
+              </div>
+        <script src="./Scripts/main.js"></script>
+        </body>
