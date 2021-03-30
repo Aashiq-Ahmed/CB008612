@@ -25,6 +25,282 @@ h1, h2 {
   margin-right: auto;
 }
 
+/* Starting of Forms (14-March-2020) */
+.fullform{
+  margin: 1em;
+  padding: 1em 1em 0em 1em;
+  border: 2px solid #0b6623;
+  font-size: medium;
+}
+
+input {
+  display: inline-block;
+  float: right;
+  width: 215px;
+  padding: .10rem;
+  margin: 10px auto;
+  text-align: center;
+}
+
+input[type=text]{
+  background-color: rgb(227, 255, 227);
+  font-size:medium ;
+}
+
+textarea {
+  width: 2px;
+  padding: .10rem;
+  margin: 10px auto;
+}
+
+.buynow {
+  font-size: 14.5px;
+  margin: auto;
+  padding: 1rem 0 .5rem;
+}
+
+.fullform label{
+  font-size: medium;
+  padding: 1rem 0 .5rem;
+}
+
+.currentorderMain {
+  margin: 1em;
+  padding: 1rem;
+  border: 2px solid #0b6623;
+}
+
+.favouritesMain{
+  margin: 17px 1em;
+  padding: 1rem;
+  border: 2px solid #0b6623;
+}
+
+select {
+  width: 5px;
+}
+
+.overallorderMain{
+  margin: 3px;
+  padding: 3px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.overallorderMain table tr thead{
+  padding-left: 1em;
+}
+
+.btn{
+  border: 2px solid black;
+  background-color: #3b5f29;
+  padding: 2px;
+  margin: auto;
+  color: wheat;
+  width: auto;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.btnbox {
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+/* ======================================================================================= */
+
+@media (min-device-width: 768px) and (max-device-width: 1024px){
+  #overallOrderTable tfoot td{
+    width: 100%;
+    padding: 0 132% !important;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 760px){
+  #overallOrderTable tfoot td{
+    width: 100%;
+    padding: 0 38% !important;
+    font-weight: bold;
+  }
+}
+
+	@media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+      #overallOrderTable table, thead, tbody, th, td, tr {
+      display: block;
+      
+		}
+
+		#overallOrderTable th {
+			position: absolute;
+			top: -9999px;
+      left: -9999px;
+		}
+
+    #overallOrderTable tr {
+      border: #d0f0c0;
+    }
+    
+    #overallOrderTable tbody tr:last-child{
+      margin-bottom: 0;
+    }
+
+    #overallOrderTable tfoot td{
+      width: 100%;
+      padding: 0 50%;
+      font-weight: bold;
+    }
+
+    #overallOrderTable tfoot tr {
+      border: none;
+    }
+
+    #overallOrderTable tbody td:nth-child(1) {
+      background: black;
+      color: white;
+      text-align:center;
+      height: 20px;
+    }
+    #overallOrderTable tbody td:nth-child(2) {
+      background: white;
+      color: black;
+      text-align:center;
+      height: 20px;
+    }
+    
+    #overallOrderTable tbody td:nth-child(3) {
+      background: black;
+      color: white;
+      text-align:center;
+      height: 20px;
+    }
+    
+    #overallOrderTable tbody td:nth-child(4) {
+      background: white;
+      color: black;
+      text-align:center;
+      height: 50px;
+    }
+    
+    #overallOrderTable tbody td:nth-child(5) {
+      background: black;
+      color: white;
+      text-align:center;
+      height: 20px;
+    }
+    
+    
+		#overallOrderTable td {
+      background:#f2f2f2;
+			border: none;
+			border-bottom: 1px solid black;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		#overallOrderTable td:before {
+			position: absolute;
+			top: 0;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+		#overallOrderTable tbody td:nth-of-type(1):before { content: "Manufacturer"; font-weight: bold; }
+		#overallOrderTable tbody td:nth-of-type(2):before { content: "Product Type"; font-weight: bold;}
+    #overallOrderTable tbody td:nth-of-type(3):before { content: "Size"; font-weight: bold;}
+    #overallOrderTable tbody td:nth-of-type(4):before { content: "Extras"; font-weight: bold;}
+    #overallOrderTable tbody td:nth-of-type(5):before { content: "Price"; font-weight: bold;}
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    #overallOrderTable table thead{
+      background-color: black;
+      color: white;
+    }
+
+    #overallOrderTable table td {
+      border: 1px grey solid;
+      text-align: justify;
+      padding: 10px 8px;
+    }
+
+    #overallOrderTable table td:nth-child(1) {
+      width: 20%;
+    }
+    #overallOrderTable table td:nth-child(2) {
+      width: 20%;
+    }
+    #overallOrderTable table td:nth-child(3) {
+      width: 20%;
+    }
+    #overallOrderTable table td:nth-child(4) {
+      width: 20%;
+    }
+    #overallOrderTable table td:nth-child(5) {
+      width: 20%;
+    }
+
+    #overallOrderTable tr td {
+      text-align: center;
+      font-weight: bold;
+      border-right: none ;
+    }
+
+    #overallOrderTable table th{
+      background-color: #004b14;
+      color: white;
+      padding: 10px 8px;
+    }
+    
+    #overallOrderTable table{
+      width: 100%;
+      font-size: 20px;
+      border-collapse: collapse;
+    }
+  }
+/* ========================================================================================================== */
+
+@media only screen and (min-width: 1025px){
+  .buynow {
+    margin: auto;
+    padding: 1rem 0 .5rem;
+  }
+
+  .fullform input, label{
+    font-size: 20px;
+  }
+
+  legend{
+    font-size: 25px
+  }
+
+  .fullform p label{
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .btn{
+    border: 2px solid black;
+    background-color: #3b5f29;
+    padding: 2px;
+    margin: auto;
+    color: wheat;
+    width: 194px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+}
+/* Ending of Forms */
+
 @media only screen and (min-width: 1025px){
   #logo {
     position: relative;
@@ -166,14 +442,14 @@ a:hover{
 .banner{
   display: block;
   text-align: center;
-  width: 100vw;
+  width: 99vw;
 }
 
 @media only screen and (min-width: 1025px){
   .banner{
     display: block;
     text-align: center;
-    width: 100vw;
+    width: 99vw;
   }
 }
 
@@ -830,7 +1106,7 @@ a:hover{
 @media (min-device-width: 768px) and (max-device-width: 1024px){
   tfoot td{
     width: 100%;
-    padding: 0 102% !important;
+    padding: 0 132% !important;
     font-weight: bold;
   }
 }
@@ -935,6 +1211,8 @@ a:hover{
     }
 
     table th{
+      background-color: #004b14;
+      color: white;
       padding: 10px 8px;
     }
 
